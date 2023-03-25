@@ -1,0 +1,93 @@
+var nombre = 'Alan';
+var apellido = 'Turing';
+
+    'Soy una cadena de caractere\'con comillas\''
+ miMet = 'Aprender a "programar"';
+
+ console.log(miMet);
+
+ //secuencias de escape
+ /* no se reperesnetan a si mismos
+ 
+ código  |  resultado
+ \'         comilla simple
+ \"         comilla doble+
+ \\         barra invertida
+ \n         linea nueva de código
+ \r         retorno de carro
+ \t         tabulación
+ \b         retroceso
+ \f         salto de página
+ 
+*/
+ // UNIR CADENAS igual q en python
+ 
+ var nombreCompleto = 'Alan ' + 'Turing';
+console.log(nombreCompleto)
+
+var verbo = 'programar';
+var mensaje = 'estoy aprendiendo '+ verbo + ' con freecodecamp';
+console.log(mensaje);
+
+var mensajecompleto = 'Estoy aprendiendo a programar ';
+var parteFinal = 'con freecodecamp';
+console.log(mensajecompleto);
+mensajecompleto += parteFinal  //se concatena con el =+
+console.log(mensajecompleto)
+
+//longitud de una cadena de caracteres. 
+
+var miCadena = 'aB ';
+console.log(miCadena.length)  // para ver la cantidad de caracteres que tiene una cadena. 
+
+var maslar = 'Aguante belgranoooooo !!! ';
+console.log(maslar.length);
+
+// INDICES, acceder a los caracteres.  y asi con 0 1 2 3 4 5 6 7 8 
+
+var lenguajeDeProgramacion = 'Javascript';
+console.log(lenguajeDeProgramacion[0]);
+
+
+// inmutibilidad de cadenas o sea no se pueden cambiar
+
+var micadd = 'Jola Mundo';
+console.log(micadd)
+// micadd[0] = 'H' ERRORRR!!!
+micadd = 'Hola Mundo';
+console.log(micadd)
+
+// para ver ultima letra LA LONGITUD DE LA CADENA - 1
+
+var micad2 = 'PYTHON';
+console.log(micad2[micad2.length - 1 ]);
+
+// penultimo, ultimo, ante ultimo, etc. forma de contar la cadena desde atras}
+// El penultimo indice es la LONGITUD - 2  pq se empieza a contar desde 0 
+
+
+var mica3 = 'Javascript';
+console.log(mica3[mica3.length - 4]);
+
+
+//otra forma es establecer una variable 'n' para evitar estar tocando el codigo y simplemente actualizarla. 
+
+var mica4 = 'Hola mi vida no desconfies de la musica';
+n = 2;
+
+console.log(mica4[mica4.length - n]);
+
+n = 5;
+console.log(mica4[mica4.length - n]);
+
+// palabras en blanco. 
+
+// mini juego propuesto por la profe. 
+
+var miSustantivo = 'perro';
+var miAdjetivo = 'negro';
+var miVerbo = 'corrió';
+var miAdverbio = 'rapidamente';
+
+var palabrasEnBlanco = 'El ' + miSustantivo + ' ' +  miAdjetivo + ' ' + miVerbo + ' ' + miAdverbio + ' a la tienda.';
+console.log(palabrasEnBlanco);
